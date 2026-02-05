@@ -4,39 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Login</title>
 </head>
 <body>
     <div class="login" id="login">
-        <form id="login_from" >
-            <i class="fa-solid fa-user main_icon"></i>
-            <input type="text" placeholder="Enter Email ID">
+        <form id="login_from">
+            <div class="login_icon">
+                 <i class="fa-solid fa-user"></i>
+            </div>
+            
+            <input type="text" placeholder="Enter Email ID" required>
+            
             <div class="pass-container">
-                <input
-                    type="password"
-                    id="pass"
-                    placeholder="Enter Password"
-                />
+                <input type="password" id="pass" placeholder="Enter Password" required />
                 <i class="fa-regular fa-eye toggle-pass" id="toggleIcon" onclick="togglePassword()"></i>
             </div>
-            <span class="fpass">Forgot Password</span>
-            <button>Login</button>
-            <span>Don't Have an Account <a href="">Sign Up</a></span>
+            
+            <span class="fpass"><a href="">Forgot Password</a></span>
+            
+            <button type="submit">Login</button>
+            
+            <span class="aAc">Don't Have an Account <a href="./signUp.html">Sign Up</a></span>
         </form>
     </div>
+
     <script>
-         function togglePassword() {
+        function togglePassword() {
             const passInput = document.getElementById("pass");
-            const pass2Input = document.getElementById("pass2");
             const icon = document.getElementById("toggleIcon");
+            
             if (passInput.type === "password") {
                 passInput.type = "text";
-                pass2Input.type = "text";
                 icon.classList.replace("fa-eye", "fa-eye-slash");
             } else {
                 passInput.type = "password";
-                pass2Input.type = "password";
                 icon.classList.replace("fa-eye-slash", "fa-eye");
             }
         }

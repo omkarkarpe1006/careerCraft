@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/career3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.login {
+  width: 450px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  text-align: center;
+}
+
+#login_from {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.login_icon {
+  font-size: 2.5rem;
+  color: white;
+  background-color: rgb(0, 140, 255);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+input {
+  width: 90%;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-size: 1rem;
+}
+
+.pass-container {
+  position: relative;
+  width: 100%;
+}
+
+.toggle-pass {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #555;
+  transition: 0.2s;
+}
+
+.toggle-pass:hover {
+  color: #008cff;
+}
+
+.fpass{
+   
+  align-self: flex-end;  
+  padding-right: 20px;
+
+}
+.fpass a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+  width: 90%;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: rgb(0, 140, 255);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    transform 0.2s;
+}
+
+button:hover {
+  background-color: #0076d6;
+  transform: translateY(-2px);
+}
+
+.aAc a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .login {
+    width: 90%;         
+    padding: 30px 20px;
+  }
+
+  input, button {
+    width: 100%;
+  }
+
+  .toggle-pass {
+    right: 10px;
+  }
+}
