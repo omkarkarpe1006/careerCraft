@@ -22,7 +22,7 @@ body {
   /* background: rgba(255, 255, 255, 0.15); */
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-  padding: 40px;
+  padding: 30px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -55,12 +55,12 @@ body {
 
 input {
   width: 90%;
-  height: 45px;
+  height: 40px;
   background: rgba(255, 255, 255, 0.9);
   border: none;
   border-radius: 8px;
   padding: 0 15px;
-  font-size: 1rem;
+  font-size: 0.9em;
 }
 
 .pass-container {
@@ -95,7 +95,7 @@ input {
     font-weight: bold;
 }
 button {
-  width: 90%;
+  width: 40%;
   padding: 12px;
   font-size: 1.1rem;
   font-weight: 600;
