@@ -1,4 +1,4 @@
-      document.getElementById("learn-more").addEventListener("click", function(e){
+    document.getElementById("learn-more").addEventListener("click", function(e){
     e.preventDefault(); 
     let content=document.getElementById("read_more");
 

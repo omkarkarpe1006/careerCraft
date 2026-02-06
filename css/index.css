@@ -146,7 +146,7 @@
 }
 .about-content h1 {
     color: #ff4d4d;
-    font-size: 2.5em;
+    font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -154,13 +154,11 @@
 .about-content h4 {
     font-size: 1.5em;
     margin: 15px 0;
-    color: #2c3e50;
     line-height: 1.2;
 }
 
 .about-content p {
-    font-size: 18px;
-    color: #7f8c8d;
+    font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 25px;
 }
@@ -176,7 +174,7 @@
 
 .courses h1{
     color: #ff4d4d;
-    font-size: 2.5em;
+    font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -184,7 +182,7 @@
 .courses h4 {
     font-size: 1.5em;
     margin: 15px 0;
-    color: #2c3e50;
+    color: rgb(43, 45, 46);
     line-height: 1.2;
 }
 
@@ -196,7 +194,6 @@
 }
 
 .course-card{
-  background:#fff;
   border-radius:12px;
   overflow:hidden;
   text-align:left;
@@ -216,15 +213,120 @@
 }
 
 .course-card h3{
-  font-size:22px;
+  font-size:1.5em;
   margin:20px;
   color:#1e1e1e;
 }
 
 .course-card p{
-  font-size:15px;
+  font-size:1em;
   color:#666;
   margin:0 20px 25px;
   line-height:1.6;
 }
+
+.footer{
+    width:100%;
+    background-color: rgb(0,140,255);
+    display:flex;
+    justify-content:space-between;
+    padding:60px 8%;
+    gap:40px;
+}
+
+.about-footer{
+    width:30%;
+    text-align:left;
+}
+.about-footer h2{
+    margin-bottom:20px;
+}
+
+.about-footer p{
+    font-size:1em;
+    line-height:1.7;
+}
+
+.about-icons{
+  display:flex;
+  gap:15px;
+  margin-top:20px;
+}
+
+.about-icons i{
+  width:40px;
+  height:40px;
+  color:black;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:8px;
+  font-size:1.5em;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.about-icons i:hover{
+  background:rgb(20, 20, 231);
+}
+
+.useful-links{
+    width: 30%;
+    text-align: left;
+}
+
+.useful-links h2{
+    padding-bottom: 15px;
+}
+.useful-links ul{
+    list-style:none;
+}
+.useful-links ul li a{
+  font-size:1em;
+  color: black;
+  text-decoration:none;
+}
+
+.useful-links ul li{
+  margin-bottom:15px;
+}
+
+.useful-links ul li a:hover{
+  color:rgb(20, 20, 231);
+}
+.contact-info{
+  width:30%;
+}
+
+.contact-info h2{
+  margin-bottom:20px;
+}
+
+.icon1{
+  display:flex;
+  gap:12px;
+  margin-bottom:15px;
+  align-items:flex-start;
+}
+
+.icon1 i{
+  color:black;
+  margin-top:4px;
+}
+
+.icon1 span{
+  font-size:15px;
+  line-height:1.6;
+}
+
+.copyright{
+    width: 100%;
+  color:rgb(5, 5, 5);  
+  background-color: rgb(0,140,255);    
+  text-align:center;
+  padding:15px 0;
+  font-size:1.1em;
+  font-weight: bold;
+}
+
 
