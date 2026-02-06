@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/index.css" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/index.js" text="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   </head>
   <body>
     <div class="container">
@@ -50,8 +52,8 @@
           <img src="./img/gemini.png" alt="" />
         </div>
         <div class="about-content">
-          <span class="subtitle">About us </span>
-          <h3>Creating a Community of Life Long Lerners</h3>
+          <h1>About us </h1>
+          <h4>Creating a Community of Life Long Lerners</h4>
           <p id="p">
             At Career Craft Academy, we're dedicated to shaping your future
             through unparalleled technical training. Our academy is your
@@ -72,116 +74,56 @@
         </div>
       </section>
       <section class="courses">
-        <h1>Our Courses</h1>
-        <p>features on this month</p> 
-         <div class="course-container">
-        
-        <div class="first">
-          <img src="./img/data science.jpg" alt="" />
-          <h1>Data Science</h1>
-          <p>
-            The Data Science Skill Development Program is designed to provide
-            learners with a strong foundation in data analysis, statistical
-            concepts, and modern data science tools. This course covers data
-            collection, data cleaning, data visualization, and exploratory data
-            analysis using real-world datasets. Participants will gain hands-on
-            experience with Python libraries, basic machine learning concepts,
-            and problem-solving techniques that are essential for data-driven
-            decision-making. The program prepares learners for careers in data
-            analytics, business intelligence, and emerging data science roles.
-          </p>
-        </div>
-        <div class="first">
-          <img src="./img/Android app development.jpg" alt="" />
-          <h1>Android App Development</h1>
-          <p>
-            The Android App Development program focuses on the design and
-            development of mobile applications using Android Studio. This course
-            covers user interface design, user interaction, application
-            navigation, and basic user authentication concepts. Participants
-            will learn how to build functional, user-friendly Android
-            applications while understanding the Android app lifecycle. By the
-            end of the program, learners will be able to develop, test, and
-            deploy Android applications, preparing them for entry-level roles in
-            mobile application development.
-          </p>
-        </div>
-        <div class="first">
-          <img src="./img/python.jpg" alt="" />
-          <h1>Core Java / Python Programming</h1>
-          <p>
-            The Core Java/Python Programming course provides participants with a
-            solid foundation in programming concepts using Java and Python. This
-            program covers syntax, data types, control structures,
-            object-oriented programming concepts, and basic problem-solving
-            techniques. Learners will work on practical examples and exercises
-            to strengthen their logical thinking and coding skills. This course
-            is ideal for beginners who want to build a strong programming base
-            for careers in software development, application development, and
-            competitive programming.
-          </p>
-        </div>
-        <div class="first">
-          <img src="./img/full stack web developer.jpeg" alt="" />
-          <h1>Full Stack Website Development</h1>
-          <p>
-            The Full Stack Website Developer program is designed to provide
-            learners with complete knowledge of both front-end and back-end web
-            development. This course covers building responsive user interfaces
-            using HTML, CSS, and modern front-end techniques, along with
-            server-side development concepts. Participants will gain an
-            understanding of databases, application logic, and basic deployment
-            practices. Through hands-on projects, learners develop the skills
-            required to design, develop, and maintain fully functional web
-            applications, preparing them for roles as full stack developers in
-            the IT industry.
-          </p>
-        </div>
+  <h1>Popular Courses</h1>
+  <h4>Featured On This Month</h4>
 
-        <div class="first">
-          <img src="./img/ui-ux design.jpeg" alt="" />
-          <h1>UI/UX Design</h1>
-          <p>
-            The UI/UX Design program focuses on creating visually appealing and
-            user-friendly digital interfaces. This course covers user interface
-            principles, user experience design concepts, wireframing,
-            prototyping, and usability testing. Participants learn how to design
-            applications and websites that provide smooth navigation and
-            engaging user experiences. The program helps learners understand
-            user behavior and design thinking, preparing them for roles in UI/UX
-            design, product design, and front-end development.
-          </p>
-        </div>
-        <div class="first">
-          <img src="./img/digital marketing.jpeg" alt="" />
-          <h1>Digital Marketing</h1>
-          <p>
-            The Digital Marketing course provides a comprehensive understanding
-            of online marketing strategies and digital branding. This program
-            covers search engine optimization (SEO), social media marketing,
-            content marketing, email marketing, and basic analytics. Learners
-            will understand how to promote products and services effectively
-            through digital platforms and analyze campaign performance. This
-            course prepares participants for careers in digital marketing,
-            online branding, and business growth strategies.
-          </p>
-        </div>
-      </div>
-      </section>
+  <div class="course-container">
+    <div class="course-card">
+      <img src="./img/python.jpg" alt="">
+      <h3>Programming & Software Development</h3>
+      <p>
+        This course category focuses on building strong coding foundations
+        and practical development skills.
+      </p>
     </div>
-    <script>
-      document.getElementById("learn-more").addEventListener("click", function(e){
-    e.preventDefault(); 
-    let content=document.getElementById("read_more");
 
-    if(content.style.display==="none"){
-      content.style.display="inline";
-      this.textContent="Read less";
-    } else {
-      content.style.display="none";
-      this.textContent="Read more";
-    }
-  });
-    </script>
+    <div class="course-card">
+      <img src="./img/data science.jpg" alt="">
+      <h3>Data AI & Technology</h3>
+      <p>
+        Data and AI courses introduce learners to data analysis,
+        machine learning, and intelligent systems.
+      </p>
+    </div>
+
+    <div class="course-card">
+      <img src="./img/Android app development.jpg" alt="">
+      <h3>Mobile App Development</h3>
+      <p>
+        Mobile app courses teach Android and cross-platform app
+        development with UI and deployment.
+      </p>
+    </div>
+  </div>
+</section>
+<div class="footer">
+  <div class="about-footer">
+    <p>At Career Craft Academy, we're dedicated to shaping your future through unparalleled technical training</p>
+    <div class="about-icons">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-facebook"></i>
+    </div>
+  </div>
+  <div class="useful-links">
+    <h1>Useful-Links</h1>
+    <ul>
+            <li><a href="">Contact Us</a></li>  
+            <li><a href="">All Courses</a></li>
+            <li><a href="">About Us</a></li>
+          </ul>
+  </div>
+</div>
+    </div>
   </body>
 </html>
